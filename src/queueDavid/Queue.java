@@ -3,7 +3,6 @@ import java.util.LinkedList;
 
 public class Queue {
     private LinkedList<Asistente> list = new LinkedList<>();
-//    private String prueba;
 
     public void add(Asistente asistente) {
         this.list.add(asistente);
