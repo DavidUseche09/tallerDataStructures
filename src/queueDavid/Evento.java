@@ -30,3 +30,4 @@ public class Evento {
             System.out.println("Lo sentimos, no hay suficientes tickets disponibles para " + asistente.getNombre() + " " + asistente.getApellido() + ".");
         }
     }
+}
