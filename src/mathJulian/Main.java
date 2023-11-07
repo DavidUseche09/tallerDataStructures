@@ -12,21 +12,21 @@ public class Main {
             System.out.println("La expresion es valida.");
 
         }else{
-            System.out.println("La expresion no es valida");
+            System.out.println("La expresion no es valida.");
         }
 
         if(expresionValida(expresion2)){
             System.out.println("La expresion es valida.");
 
         }else{
-            System.out.println("La expresion no es valida");
+            System.out.println("La expresion no es valida.");
         }
 
         if(expresionValida(expresion3)){
             System.out.println("La expresion es valida.");
 
         }else{
-            System.out.println("La expresion no es valida");
+            System.out.println("La expresion no es valida.");
         }
 
 

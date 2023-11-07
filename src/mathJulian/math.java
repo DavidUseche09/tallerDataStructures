@@ -5,9 +5,12 @@ import java.util.Stack;
 public class math {
     public static boolean expresionValida(String expresion) {
         Stack<Character> pila = new Stack<>();
+
         for (char c : expresion.toCharArray()) {
             if (c == '{' || c == '[' || c == '(') {
                 pila.push(c);
+
+
             } else if (c == '}' || c == ']' || c == ')') {
                 if (pila.isEmpty()) {
                     return false;               // cierre sin apertura correspondiente
