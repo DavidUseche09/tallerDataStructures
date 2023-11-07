@@ -20,7 +20,6 @@ public class Evento {
             System.out.println("No hay más tickets disponibles. Lo sentimos, " + asistente.getNombre() + " " + asistente.getApellido() + ".");
         }
     }
-
     public void atenderAsistentes() {
         Scanner scanner = new Scanner(System.in);
         while (!asistentes.isEmpty()) {
@@ -36,6 +35,5 @@ public class Evento {
             }
         }
     }
-
 }
 
