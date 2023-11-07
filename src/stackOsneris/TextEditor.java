@@ -12,7 +12,7 @@ public class TextEditor {
         actionStack = new Stack<>();
     }
     public void addText(String word) {
-        text.append(word).append(" ");
+        text.append(word).append("");
         actionStack.push(word);
     }
 
