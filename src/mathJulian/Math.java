@@ -2,7 +2,7 @@ package mathJulian;
 import java.util.Stack;
 
 
-public class math {
+public class Math {
     public static boolean expresionValida(String expresion) {
         Stack<Character> pila = new Stack<>();
 
@@ -13,7 +13,7 @@ public class math {
 
             } else if (c == '}' || c == ']' || c == ')') {
                 if (pila.isEmpty()) {
-                    return false;               // cierre sin apertura correspondiente
+                    return false;
                 }
                 char apertura = pila.pop();
                 if ((c == '}' && apertura != '{') || (c == ']' && apertura != '[') || (c == ')' && apertura != '(')) {

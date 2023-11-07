@@ -1,33 +1,28 @@
 package mathJulian;
-import static mathJulian.math.expresionValida;
+import java.util.ArrayList;
+import java.util.List;
+
+import static mathJulian.Math.expresionValida;
 
 public class Main {
     public static void main(String[] args) {
 
-        String expresion1 = "(2+2)*(4)";
-        String expresion2 = "[5*(4-1)]";
-        String expresion3 = "5+{2[8-(3+21]}";
+        List<String> expresionesList = new ArrayList<>();
 
-        if(expresionValida(expresion1)){
-            System.out.println("La expresion es valida.");
 
-        }else{
-            System.out.println("La expresion no es valida.");
+        expresionesList.add("(2+2)*(4)");
+        expresionesList.add("[5*(4-1)]");
+        expresionesList.add("5+{2[8-(3+21]}");
+
+
+        for (String expresion:expresionesList){
+            if(expresionValida(expresion)){
+                System.out.println("La expresion es valida.");
+            }else{
+                System.out.println("La expresion no es valida.");
+            }
         }
 
-        if(expresionValida(expresion2)){
-            System.out.println("La expresion es valida.");
-
-        }else{
-            System.out.println("La expresion no es valida.");
-        }
-
-        if(expresionValida(expresion3)){
-            System.out.println("La expresion es valida.");
-
-        }else{
-            System.out.println("La expresion no es valida.");
-        }
 
 
 
